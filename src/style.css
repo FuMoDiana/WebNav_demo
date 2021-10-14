@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.globalHeader {
+    margin: 10px;
+    top: 10px;
+}
+
+@media(min-width:500px) {
+    .globalHeader {
+        margin-top: 80px;
+        margin-bottom: 90px;
+    }
+}
+
+.sreachFrom {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:500px) {
+    .sreachFrom {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.sreachFrom>input {
+    height: 41px;
+    width: 240px;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #C9BCBC;
+}
+
+.sreachFrom>button {
+    height: 41px;
+    width: 70px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #C9BCBC;
+    background-color: #5D5FEF;
+    color: white;
+    font-size: 16px;
+}
+
+@media(min-width:500px) {
+    .sreachFrom>input {
+        width: 300px;
+    }
+}
+
+.globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(min-width:500px) {
+    .siteList {
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+}
+
+.siteList>li {
+    margin-right: -10px;
+    margin-bottom: 10px;
+}
+
+@media(min-width:500px) {
+    .siteList>li {
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+.siteList .site {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.siteList .site>.logo {
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.siteList .site>.link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.siteList .site>.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.siteList .site:hover>.close {
+    display: block;
+}
+
+.siteList .addButton {
+    width: 160px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteList .addButton .icon {
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.siteList .addButton .text {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
